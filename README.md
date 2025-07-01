@@ -105,7 +105,7 @@ I'm a passionate **Data Scientist** and **Machine Learning Engineer** with a uni
 
 ---
 
-### 💧 [Maji Ndogo Water Source Analysis](https://github.com/Fidelis-Akinbule/maji-ndogo-analysis)
+### 💧 [Maji Ndogo Water Source Analysis](https://github.com/Fidelis-Akinbule/Majidogo_project)
 **SQL-Based Operational Analytics Project**
 
 - **Tech Stack:** MySQL, SQL, Data Cleaning, Business Intelligence
