@@ -62,7 +62,7 @@ I'm a passionate **Data Scientist** and **Machine Learning Engineer** with a uni
 
 ## 🏆 Featured Projects
 
-### 🔍 [Fraud Detection Pipeline](https://github.com/Fidelis-Akinbule/fraud-detection-pipeline)
+### 🔍 [Comprehensive Fraud Detection Pipeline](https://github.com/Fidelis-Akinbule/ComprehesiveFraudDetectionPipeline)
 **End-to-End ML Pipeline for Financial Fraud Detection**
 
 - **Tech Stack:** Python, Scikit-learn, Pandas, Streamlit, MLOps
