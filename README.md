@@ -76,7 +76,7 @@ I'm a passionate **Data Scientist** and **Machine Learning Engineer** with a uni
 
 ---
 
-### 📈 [ICT/MMM RL Trading Bot](https://github.com/Fidelis-Akinbule/ict-mmm-rl-trading-bot)
+### 📈 [ICT/MMM RL Trading Bot](https://github.com/Fidelis-Akinbule/ict-mmm_bot)
 **Sophisticated Algorithmic Trading System with Reinforcement Learning**
 
 - **Tech Stack:** Python, Stable-Baselines3, MetaTrader 5, PPO, Technical Analysis
