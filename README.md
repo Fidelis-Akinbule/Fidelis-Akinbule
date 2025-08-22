@@ -16,7 +16,7 @@
 
 Hi, I’m Fidelis Akinbule. I started out in Industrial Chemistry, but along the way I realized I was more drawn to working with data. That curiosity pushed me into Data Science and Machine Learning, where I now spend my time building projects that connect numbers to real-world outcomes.
 
-I enjoy creating end-to-end solutions — from cleaning raw data to deploying models that people can actually use. My main interests are in financial machine learning, fraud detection, and business analytics.
+I enjoy creating end-to-end solutions from cleaning raw data to deploying models that people can actually use. My main interests are in financial machine learning, fraud detection, and business analytics.
 
 Right now, I’m sharpening my skills in reinforcement learning and exploring how it can be applied to markets and decision-making systems. My long-term goal is to keep building practical, data-driven solutions that make an impact.
 
