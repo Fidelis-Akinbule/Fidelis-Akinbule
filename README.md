@@ -2,7 +2,7 @@
 
 <div align="center">
   
-### 🚀 Data Scientist | Machine Learning Engineer | Algorithmic Trading Specialist
+### 🚀 Data Scientist | Machine Learning Engineer 
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fidelis-akinbule/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Fidelis-Akinbule)
@@ -24,7 +24,7 @@ I'm a passionate **Data Scientist** and **Machine Learning Engineer** with a uni
 - 🔭 Currently working on **Advanced Trading Algorithms** and **Fraud Detection Systems**
 - 🌱 Learning **Reinforcement Learning** and **Financial Market Analysis**
 - 💡 Passionate about **MLOps**, **AutoML**, and **Real-time Systems**
-- 📊 Experience in **Business Intelligence** and **Operational Analytics**
+
 
 ---
 
@@ -47,7 +47,6 @@ I'm a passionate **Data Scientist** and **Machine Learning Engineer** with a uni
 
 ### Development & Deployment
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
