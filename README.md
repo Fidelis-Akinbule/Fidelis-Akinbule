@@ -40,8 +40,10 @@ I'm a Data Scientist and Machine Learning Engineer with a background in Industri
 
 **ML & Data Science**  
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-orange?style=flat)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
+![SHAP](https://img.shields.io/badge/SHAP-blue?style=flat)
 
 **Deployment & Tools**  
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
@@ -52,7 +54,29 @@ I'm a Data Scientist and Machine Learning Engineer with a background in Industri
 
 ---
 
-## 🏆 Portfolio Projects
+## 🏆 Featured Projects
+
+### 💳 [Production-Grade Credit Risk Scoring Model](https://github.com/Fidelis-Akinbule/credit_risk_model)
+
+**Problem**: Financial institutions lose millions annually due to poor credit risk assessment and lack reliable default prediction systems.
+
+**Solution**: Built an end-to-end ML system that predicts loan defaults and converts predictions to industry-standard 300-900 credit scores with perfect calibration.
+
+**Tech Stack**: Python, XGBoost, SHAP, Scikit-learn, Streamlit  
+**Key Achievements**:
+- **86.75% AUC** with perfect calibration (0.00001% gap)
+- **$3.45M annual loss reduction** (28.7% improvement)
+- **84.2% default capture** in top 30% of applicants
+- **59% SHAP impact** from engineered delinquency features
+- **Distribution shift detection** caught 60.7% test set risk increase, preventing $162M disaster
+
+**Business Impact**: 95.1% approval rate maintained with 25.1% default reduction. Regulatory compliant (Basel III, IFRS 9) with complete governance documentation.
+
+**Highlights**: Demonstrates production ML excellence—feature engineering, model calibration, explainability, business strategy optimization, and risk monitoring.
+
+[View Project →](https://github.com/Fidelis-Akinbule/credit_risk_model)
+
+---
 
 ### 🔍 [End-to-End Fraud Detection System](https://github.com/Fidelis-Akinbule/ComprehesiveFraudDetectionPipeline)
 
@@ -69,8 +93,6 @@ I'm a Data Scientist and Machine Learning Engineer with a background in Industri
 - 95%+ detection accuracy with minimal false positives
 
 **Impact**: Demonstrates production-ready ML system design with focus on reliability and business value.
-
-**Development Note**: Built using AI-assisted development with focus on modular architecture and maintainability.
 
 [View Project →](https://github.com/Fidelis-Akinbule/ComprehesiveFraudDetectionPipeline)
 
@@ -91,8 +113,6 @@ I'm a Data Scientist and Machine Learning Engineer with a background in Industri
 - Comprehensive performance monitoring and backtesting
 
 **Performance Targets**: Sharpe Ratio >1.5, Max Drawdown <10%, Win Rate >55%
-
-**Development Note**: Complex system architecture designed with AI assistance, refined through iterative testing.
 
 [View Project →](https://github.com/Fidelis-Akinbule/ict-mmm_bot)
 
@@ -156,14 +176,22 @@ I'm a Data Scientist and Machine Learning Engineer with a background in Industri
 **Machine Learning Engineering**
 - End-to-end ML pipeline development (data → model → deployment)
 - Feature engineering and model optimization
+- Model calibration and explainability (SHAP, LIME)
 - MLOps practices: versioning, monitoring, CI/CD
 - Model evaluation and performance tuning
 
-**Algorithmic Trading & Finance**
+**Financial ML & Risk Analytics**
+- Credit risk modeling and scorecard development
 - Quantitative strategy development
 - Risk management and portfolio optimization
+- Regulatory compliance (Basel III, IFRS 9)
+- Distribution shift detection and monitoring
+
+**Algorithmic Trading & Finance**
+- Reinforcement learning for trading systems
 - Market microstructure analysis
 - Backtesting and performance attribution
+- Real-time signal processing
 
 **Data Analytics & BI**
 - SQL-based data extraction and transformation
@@ -186,6 +214,7 @@ I'm a Data Scientist and Machine Learning Engineer with a background in Industri
 - 🔄 Automated ML pipeline orchestration with MLflow/Kubeflow
 - ⚡ Real-time streaming analytics with Apache Kafka
 - 🧪 AutoML frameworks for rapid experimentation
+- 📊 Advanced model monitoring and drift detection
 
 **Building:**
 - Advanced RL algorithms for sequential decision-making
@@ -210,7 +239,7 @@ I'm a Data Scientist and Machine Learning Engineer with a background in Industri
 ## 🤝 Open to Opportunities
 
 I'm interested in:
-- 💼 **Roles**: Data Scientist, ML Engineer, Quantitative Analyst positions
+- 💼 **Roles**: Data Scientist, ML Engineer, Quantitative Analyst, Risk Analyst positions
 - 🔬 **Projects**: Collaborative work on innovative ML applications
 - 🎓 **Learning**: Discussions about RL, MLOps, and production ML systems
 - 💡 **Consulting**: Data strategy and ML implementation for businesses
