@@ -1,165 +1,121 @@
 # Hi there, I'm Fidelis Akinbule 👋
 
-<div align="center">  
+<div align="center">
 
-### 🚀 Data Scientist | Machine Learning Engineer | AI-Assisted Development Practitioner
+### Data Scientist & ML Engineer | Nigerian fintech and telecom analytics
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/fidelis-akinbule/)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Fidelis-Akinbule)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Fakinbule@gmail.com)
 
-</div>  
+</div>
 
 ---
 
-## 🎯 About Me
+## About
 
-I'm a Data Scientist and Machine Learning Engineer with a background in Industrial Chemistry. My journey into data science began with a curiosity about patterns and decision-making, which led me to specialize in building practical ML solutions for real-world problems.
+I'm a data scientist and ML engineer in Lagos, with a BSc in Industrial Chemistry and no formal computer science training. I taught myself Python, SQL, and machine learning by building things across telecom analytics, agricultural forecasting, credit risk, fraud detection, and algorithmic trading.
 
-**My Approach:**
-- **AI-Augmented Development**: I leverage AI tools to accelerate development while maintaining code quality and understanding
-- **Problem-First Mindset**: Focus on solving business problems rather than just implementing algorithms
-- **End-to-End Ownership**: From data ingestion through deployment and monitoring
-- **Continuous Learning**: Actively exploring reinforcement learning, MLOps, and financial ML applications
+NigeriaRGI and NigeriaAgriScope are the two I'd lead with, and the two closest to where I want to keep working: both grounded in real published benchmarks (NCC quality-of-service reports, NBS population data, FAOSTAT crop records) instead of a generic template with the country's name swapped in. These are specific Nigerian problems, not generic ones wearing a Nigerian label.
 
-**Background:**
-- 🎓 BSc Industrial Chemistry - Foundation in analytical thinking and problem-solving
-- 📜 Data Science Certification - Specialized training in ML and statistical analysis
-- 💼 Self-taught developer who embraces modern AI-assisted coding workflows
+I build with AI tools as a normal part of my workflow, and I document that rather than pretending every line came from nowhere. I won't put a number in this README that I can't defend, unprompted, in an interview.
 
 ---
 
-## 🛠️ Technical Stack
+## Tech stack
 
-<div align="center">  
+<div align="center">
 
-**Core Technologies**  
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=mysql&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-
-**ML & Data Science**  
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-orange?style=flat)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
 ![SHAP](https://img.shields.io/badge/SHAP-blue?style=flat)
-
-**Deployment & Tools**  
+![Prophet](https://img.shields.io/badge/Prophet-4285F4?style=flat)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat&logo=sqlite&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat&logo=jupyter&logoColor=white)
 
-</div>  
+</div>
 
 ---
 
-## 🏆 Featured Projects
+## Featured projects
 
-### 💳 [Production-Grade Credit Risk Scoring Model](https://github.com/Fidelis-Akinbule/credit_risk_model)
+### NigeriaRGI: Regional Growth Intelligence Platform
+[Live dashboard](https://nigeriargi-hv7avwbkxycrxkzvc4irsm.streamlit.app/) · [Code](https://github.com/Fidelis-Akinbule/NigeriaRGI)
 
-**Problem**: Financial institutions lose millions annually due to poor credit risk assessment and lack reliable default prediction systems.
+I built this to cover the full toolkit a Regional BI & Analytics lead at a Nigerian telecom operator would need: an automated data pipeline, twelve SQL queries spanning revenue, subscriber, network-quality, and site-economics analytics, a five-page dashboard, two predictive models, and a go-to-market scoring engine, all running on 3,690 rows across 41 LGAs in 12 states over 90 days. (The underlying LGA-day data is simulated and calibrated against real NCC quality-of-service reports, NBS population figures, and post-2025 MTN/Airtel ARPU data, rather than pulled from a live operator system I don't have access to.)
 
-**Solution**: Built an end-to-end ML system that predicts loan defaults and converts predictions to industry-standard 300-900 credit scores with perfect calibration.
+**Results**
+- Churn model (logistic regression): 0.989 AUC and 96% recall on the at-risk class, built from week-over-week subscriber and ARPU movement plus network signals like MOS score and drop-call rate
+- Site profitability model (gradient boosting): R² 0.83, MAE ₦1.34M per site per day, so a flagged site comes with a number attached to it instead of a guess
+- GTM scoring across all 41 LGAs, weighted on population whitespace, income, POI density, penetration gap, and site economics: Sagamu, Nnewi North, and Ogbomoso lead on unmet demand; Lekki and Ikeja lead on income and footfall
 
-**Tech Stack**: Python, XGBoost, SHAP, Scikit-learn, Streamlit  
-**Key Achievements**:
-- **86.75% AUC** with perfect calibration (0.00001% gap)
-- **$3.45M annual loss reduction** (28.7% improvement)
-- **84.2% default capture** in top 30% of applicants
-- **59% SHAP impact** from engineered delinquency features
-- **Distribution shift detection** caught 60.7% test set risk increase, preventing $162M disaster
+**Stack:** Python, SQLite, Pandas, Scikit-learn, Streamlit, Plotly, Power BI (DAX)
 
-**Business Impact**: 95.1% approval rate maintained with 25.1% default reduction. Regulatory compliant (Basel III, IFRS 9) with complete governance documentation.
+### NigeriaAgriScope
+[Live dashboard](https://nigeriaagriscope-yd7pxpdaacoupjsgylhj5f.streamlit.app) · [Code](https://github.com/Fidelis-Akinbule/NigeriaAgriScope)
 
-**Highlights**: Demonstrates production ML excellence—feature engineering, model calibration, explainability, business strategy optimization, and risk monitoring.
+Nigeria grows more cassava than any other country and still gets 1.2 tonnes of maize per hectare against a global average of 5.8. It comes down to information: smallholder farmers don't have reliable data on when to plant or how much fertilizer pays off, and the resulting yield gap runs an estimated ₦2.3 trillion a year. This pulls 24 years of real FAOSTAT, NASA POWER, World Bank, and USDA data across 7 crops and 6 geopolitical zones to see how much of that gap a model can close.
 
-[View Project →](https://github.com/Fidelis-Akinbule/credit_risk_model)
+**Results**
+- Yield model (XGBoost): R² 0.991 on next-year yield, MAE 2,900 hg/ha on a 2019 to 2023 holdout set. Lagged yield and rolling 3-year rainfall matter more than any single season's inputs
+- Fertilizer response curves across all 42 crop-zone pairs put North Central yam at the top of the list: +30,538 hg/ha available at the optimal 172 kg/ha application rate, the largest single opportunity in the dataset
+- South South oil palm farmers apply 9.1 kg/ha of fertilizer against a computed optimum of 95 kg/ha, a tenfold gap worth an estimated +153 hg/ha in unrealized yield
+- Rainfall onset in the South East and North West posted a 1.00 reliability score across all 24 years, so for those two zones the planting calendar alone removes timing risk
 
----
+Prophet extends production forecasts for cassava, oil palm, and maize out to 2026 for supply-chain planning.
 
-### 🔍 [End-to-End Fraud Detection System](https://github.com/Fidelis-Akinbule/ComprehesiveFraudDetectionPipeline)
+**Stack:** Python, XGBoost, Prophet, SHAP, Pandas, Streamlit, SQLite, Power BI
 
-**Problem**: Financial institutions need automated systems to identify fraudulent transactions in real-time.
+### Credit Risk Scoring Model
+[Code](https://github.com/Fidelis-Akinbule/credit_risk_model)
 
-**Solution**: Built a complete ML pipeline with checkpoint management and business intelligence reporting.
+An end-to-end default prediction system that converts model output into industry-standard 300 to 900 credit scores. It reaches 86.75% AUC, calibrated to within 0.00001% of perfect, and catches 84.2% of actual defaults within the riskiest 30% of applicants scored, the number that matters if you're deciding where to spend review time. SHAP attributes 59% of that explanatory power to engineered delinquency features. Run against a full loan portfolio, it holds the approval rate at 95.1% while cutting defaults by 25.1%, a $3.45M annual reduction in losses. Built to Basel III and IFRS 9 documentation standards throughout.
 
-**Tech Stack**: Python, Scikit-learn, Pandas, Streamlit  
-**Key Features**:
-- Modular preprocessing with automated feature engineering
-- Multiple ML algorithms (Random Forest, XGBoost, Logistic Regression)
-- Checkpoint system for pipeline resumability
-- Interactive Streamlit dashboard with PDF report generation
-- 95%+ detection accuracy with minimal false positives
+The part I'm gladdest I built: a distribution-shift check that caught a 60.7% jump in test-set risk before deployment, catching an estimated $162M in losses a static model would have walked straight into.
 
-**Impact**: Demonstrates production-ready ML system design with focus on reliability and business value.
+**Stack:** Python, XGBoost, SHAP, Scikit-learn, Streamlit
 
-[View Project →](https://github.com/Fidelis-Akinbule/ComprehesiveFraudDetectionPipeline)
+### Fraud Detection Pipeline
+[Code](https://github.com/Fidelis-Akinbule/ComprehesiveFraudDetectionPipeline)
 
----
+A fraud detection pipeline that runs Random Forest, XGBoost, and Logistic Regression against the same transaction data, with automated feature engineering and a checkpoint system so a crashed run doesn't mean starting over from scratch. It reaches 95%+ detection accuracy, and the Streamlit dashboard exports a PDF report that a compliance reviewer can read without touching a line of code.
 
-### 📈 [Algorithmic Trading System with Reinforcement Learning](https://github.com/Fidelis-Akinbule/ict-mmm_bot)
+**Stack:** Python, Scikit-learn, Pandas, Streamlit
 
-**Problem**: Manual trading strategies are difficult to scale and optimize systematically.
+### Algorithmic Trading Bot (Reinforcement Learning)
+[Code](https://github.com/Fidelis-Akinbule/ict-mmm_bot)
 
-**Solution**: Developed an RL-based trading system using ICT (Inner Circle Trader) methodology with automated execution.
+A PPO agent trading Inner Circle Trader (ICT) market structure concepts (order blocks, fair value gaps, break of structure and change of character) with automated risk management and dynamic position sizing. Signal latency runs under 100ms. It's aiming for a Sharpe ratio above 1.5, max drawdown under 10%, and a win rate above 55%, benchmarks it's still being tuned against rather than settled results.
 
-**Tech Stack**: Python, Stable-Baselines3 (PPO), MetaTrader 5, NumPy  
-**Key Features**:
-- PPO-based reinforcement learning agent
-- Real-time market structure analysis (Order Blocks, FVGs, BOS/CHoCH)
-- Automated risk management with dynamic position sizing
-- Sub-100ms signal latency for trade execution
-- Comprehensive performance monitoring and backtesting
+**Stack:** Python, Stable-Baselines3 (PPO), MetaTrader 5, NumPy
 
-**Performance Targets**: Sharpe Ratio >1.5, Max Drawdown <10%, Win Rate >55%
+### Water Infrastructure Analytics
+[Code](https://github.com/Fidelis-Akinbule/Majidogo_project)
 
-[View Project →](https://github.com/Fidelis-Akinbule/ict-mmm_bot)
+SQL-based operational analytics on a rural water infrastructure dataset: matching field employees to water sources more efficiently, flagging peak queue-time patterns, and ranking broken infrastructure by repair priority through cost-benefit analysis.
 
----
+**Stack:** MySQL, SQL
 
-### 📱 [NLP-Based SMS Spam Classifier](https://github.com/Fidelis-Akinbule/Simple_SMS_Spam_Detection_Model)
+### SMS Spam Classifier
+[Code](https://github.com/Fidelis-Akinbule/Simple_SMS_Spam_Detection_Model)
 
-**Problem**: Users need protection from spam messages without complex setup.
+A small TF-IDF and Naive Bayes classifier with a Streamlit front end. Naive Bayes on bag-of-words is about as simple as text classification gets, so the value here is in the clean, real-time interface built around it.
 
-**Solution**: Created a lightweight text classification system with web-based interface.
-
-**Tech Stack**: Python, Scikit-learn, TF-IDF, Naive Bayes, Streamlit  
-**Key Features**:
-- Text preprocessing pipeline (tokenization, stopword removal)
-- TF-IDF vectorization for feature extraction
-- Naive Bayes classifier optimized for text data
-- Real-time prediction via Streamlit interface
-- High accuracy with minimal computational requirements
-
-**Use Case**: Demonstrates practical NLP application with user-friendly deployment.
-
-[View Project →](https://github.com/Fidelis-Akinbule/Simple_SMS_Spam_Detection_Model)
+**Stack:** Python, Scikit-learn, TF-IDF, Naive Bayes, Streamlit
 
 ---
 
-### 💧 [Water Infrastructure Analytics Dashboard](https://github.com/Fidelis-Akinbule/Majidogo_project)
+## GitHub activity
 
-**Problem**: Inefficient water infrastructure management leading to long wait times and unaddressed maintenance.
-
-**Solution**: SQL-based operational analytics to identify bottlenecks and prioritize interventions.
-
-**Tech Stack**: MySQL, SQL, Data Cleaning, Business Intelligence  
-**Key Insights**:
-- Employee-to-water source assignment optimization
-- Queue time analysis revealing peak usage patterns
-- Identification of broken infrastructure requiring urgent repair
-- Cost-benefit analysis for maintenance prioritization
-
-**Impact**: Data-driven recommendations for improving service delivery and resource allocation.
-
-[View Project →](https://github.com/Fidelis-Akinbule/Majidogo_project)
-
----
-
-## 📊 GitHub Activity
-
-<div align="center">  
+<div align="center">
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Fidelis-Akinbule&show_icons=true&theme=radical&hide_border=true&count_private=true)
 
@@ -167,104 +123,24 @@ I'm a Data Scientist and Machine Learning Engineer with a background in Industri
 
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Fidelis-Akinbule&theme=radical&hide_border=true)
 
-</div>  
+</div>
 
 ---
 
-## 💡 Core Competencies
+## Open to
 
-**Machine Learning Engineering**
-- End-to-end ML pipeline development (data → model → deployment)
-- Feature engineering and model optimization
-- Model calibration and explainability (SHAP, LIME)
-- MLOps practices: versioning, monitoring, CI/CD
-- Model evaluation and performance tuning
+Regional BI & analytics and risk analyst roles at Nigerian telecom operators, fintechs, and microfinance banks. Also open to data strategy or ML consulting work.
 
-**Financial ML & Risk Analytics**
-- Credit risk modeling and scorecard development
-- Quantitative strategy development
-- Risk management and portfolio optimization
-- Regulatory compliance (Basel III, IFRS 9)
-- Distribution shift detection and monitoring
+[Email](mailto:Fakinbule@gmail.com) · [LinkedIn](https://www.linkedin.com/in/fidelis-akinbule/) · [GitHub](https://github.com/Fidelis-Akinbule)
 
-**Algorithmic Trading & Finance**
-- Reinforcement learning for trading systems
-- Market microstructure analysis
-- Backtesting and performance attribution
-- Real-time signal processing
-
-**Data Analytics & BI**
-- SQL-based data extraction and transformation
-- Business intelligence dashboard design
-- Operational analytics and KPI tracking
-- Stakeholder communication and reporting
-
-**Software Engineering**
-- Clean, maintainable code with proper documentation
-- Version control and collaborative development
-- Testing strategies (unit, integration, end-to-end)
-- API design and deployment
+I usually reply within a day or two.
 
 ---
 
-## 🎯 Current Focus
+<div align="center">
 
-**Exploring:**
-- 🤖 Multi-agent reinforcement learning systems
-- 🔄 Automated ML pipeline orchestration with MLflow/Kubeflow
-- ⚡ Real-time streaming analytics with Apache Kafka
-- 🧪 AutoML frameworks for rapid experimentation
-- 📊 Advanced model monitoring and drift detection
-
-**Building:**
-- Advanced RL algorithms for sequential decision-making
-- Scalable ML infrastructure for production systems
-- Knowledge base of reusable ML components and patterns
-
----
-
-## 📈 Development Philosophy
-
-> *"The best code is code that solves real problems. AI assistance accelerates development, but understanding and ownership remain essential."*
-
-**My Principles:**
-1. **Transparency**: Clear documentation of AI-assisted development
-2. **Understanding**: Every line of code should be understood and validated
-3. **Quality**: Rigorous testing and code review, regardless of how code was generated
-4. **Iteration**: Continuous refinement based on feedback and new insights
-5. **Business Value**: Technical excellence aligned with practical outcomes
-
----
-
-## 🤝 Open to Opportunities
-
-I'm interested in:
-- 💼 **Roles**: Data Scientist, ML Engineer, Quantitative Analyst, Risk Analyst positions
-- 🔬 **Projects**: Collaborative work on innovative ML applications
-- 🎓 **Learning**: Discussions about RL, MLOps, and production ML systems
-- 💡 **Consulting**: Data strategy and ML implementation for businesses
-
----
-
-## 📫 Let's Connect
-
-**Get in Touch:**
-- 📧 Email: [Fakinbule@gmail.com](mailto:Fakinbule@gmail.com)
-- 💼 LinkedIn: [fidelis-akinbule](https://www.linkedin.com/in/fidelis-akinbule/)
-- 🐙 GitHub: [@Fidelis-Akinbule](https://github.com/Fidelis-Akinbule)
-
-**Response Time:** Typically within 24-48 hours
-
----
-
-<div align="center">  
-
-### ⭐ Interested in my work? Star my repositories! ⭐
+If any of these projects are useful to you, a star helps other people find them.
 
 ![Profile Views](https://komarev.com/ghpvc/?username=Fidelis-Akinbule&color=blueviolet&style=flat-square)
-
----
-
-*"Building the future of data science, one commit at a time."*
 
 </div>
